@@ -4,5 +4,7 @@ class Reservation < ApplicationRecord
 
   validates :start_date, presence: true
   validates :end_date, presence: true
-  validates :total_price, presence: true
+  validates :total_price, presence: true, numericality: { greater_than: 0 }
+  validates :user_id, presence: true
+  validates :car_id, presence: true
 end
