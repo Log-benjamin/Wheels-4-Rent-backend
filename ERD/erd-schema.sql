@@ -1,3 +1,5 @@
+CREATE DATABASE Wheels-4-Rent-backend
+
 CREATE TABLE "User" (
   "id" int PRIMARY KEY,
   "name" VARCHAR(255),
@@ -28,3 +30,8 @@ CREATE TABLE "Reservation" (
 ALTER TABLE "Reservation" ADD FOREIGN KEY ("user_id") REFERENCES "User" ("id");
 
 ALTER TABLE "Reservation" ADD FOREIGN KEY ("car_id") REFERENCES "Car" ("id");
+
+--create indexes for the Reservations TABLE
+
+CREATE INDEX reserve_user_id ON  Reservation (user_id)
+CREATE INDEX reserve_car_id ON   Resevation (car_id)
