@@ -1,15 +1,15 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username:
-  password:
+  username: postgres
+  password: 7868
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
   database: wheels_4_rent_backend_development
-  username:
-  password:
+  username: postgres
+  password: 7868
 
 test:
   <<: *default
