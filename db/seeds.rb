@@ -1,4 +1,4 @@
-    admin=User.create({ name: "admin", email: 'admin@wheels4rent.com', password_digest: '123456789', is_admin: true })
+    admin=User.create({ name: "admin", email: 'admin@wheels4rent.com', password: '123456789', is_admin: true })
 
     if admin.valid?
         admin.save()
