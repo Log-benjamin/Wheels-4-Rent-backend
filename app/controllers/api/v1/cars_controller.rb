@@ -28,7 +28,7 @@ class Api::V1::CarsController < ApplicationController
     @car = Car.find(params[:id])
   end
 
-  def car_parms
+  def car_params
     params.require(:car).permit(:name, :model, :description, :image, :price_per_day)
   end
 end
