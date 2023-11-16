@@ -1,5 +1,5 @@
 class Api::V1::CarsController < ApplicationController
-  before_action :set_car, only: %i[show]
+  before_action :set_car, only: %i[show destroy]
   # GET /cars
   def index
     @cars = Car.all
