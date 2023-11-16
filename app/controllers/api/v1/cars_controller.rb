@@ -22,6 +22,15 @@ class Api::V1::CarsController < ApplicationController
     end
   end
 
+  # Delete /cars/1
+  def destroy
+    if @car.destroy
+      render json: { id: @car.id }
+    else
+      render json: { error: 'fail to delete the car', status: :unprocessable_entity }
+    end
+  end
+
   private
 
   def set_car
