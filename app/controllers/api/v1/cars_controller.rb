@@ -1,5 +1,5 @@
 class Api::V1::CarsController < ApplicationController
-  before_action :set_car, only: %i[show]
+  before_action :set_car, only: %i[show destroy]
   # GET /cars
   def index
     @cars = Car.all
@@ -19,6 +19,15 @@ class Api::V1::CarsController < ApplicationController
       render json: { status: 200, car: @car }
     else
       render json: { status: 404, errorMessage: @car.errors.full_messages.to_sentence }
+    end
+  end
+
+  # Delete /cars/1
+  def destroy
+    if @car.destroy
+      render json: { id: @car.id }
+    else
+      render json: { error: 'fail to delete the car', status: :unprocessable_entity }
     end
   end
 
