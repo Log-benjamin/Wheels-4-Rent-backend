@@ -1,4 +1,27 @@
 class Api::V1::ReservationController < ApplicationController
+  before_action :set_reservation, only: %i[destroy]
+
+  # GET /reservations
+  def index
+    @reservations = Reservation.all.includes(:car, :user)
+    data = @reservations.map do |reservation|
+      {
+        id: reservation.id,
+        start_date: reservation.start_date,
+        end_date: reservation.end_date,
+        city: reservation.city,
+        user: reservation.user.name,
+        user_id: reservation.user.id,
+        car: reservation.car.name,
+        model: reservation.car.model,
+        price: reservation.car.price_per_day,
+        image: reservation.car.image
+      }
+    end
+
+    render json: data
+  end
+
   # POST /reservations
   def create
     @reservation = Reservation.new(reservation_params)
@@ -8,6 +31,13 @@ class Api::V1::ReservationController < ApplicationController
     else
       render json: { status: 404, errorMessage: @reservation.errors.full_messages.to_sentence }
     end
+  end
+
+  # DELETE /reservation/1
+  def destroy
+    return unless @reservation.destroy
+
+    render json: { id: @reservation.id }
   end
 
   private
