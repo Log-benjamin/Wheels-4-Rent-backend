@@ -1,20 +1,23 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
+<img  src='./app/assets/images/9296454.gif' width="300px">
   <h1><b>Wheels-4-Rent</b></h1>
 
 </div>
+
+# Backend
 
 <!-- TABLE OF CONTENTS -->
 
 ## 📗 Table of Contents
 
-- [📖 Fullstack - Rails with React ](#-Wheels-4-Rent-)
+- [📖 About the Project ](#-Wheels-4-Rent-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-    - [Front-End](#Front-end)
+  - [🔗 Link for the Frontend](#frontend)
+  - [🔗 Kanban Board](#kanban)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -31,7 +34,7 @@
 
 # 📖 Wheels-4-Rent <a name="about-project"></a>
 
-**Wheels-4-Rent** An application programming interface (API) tailored for car rental services streamlines the integration of rental functionalities into various applications or systems. It empowers users to execute essential tasks associated with vehicle rental, including booking, fleet expansion, and inventory management.
+**Wheels-4-Rent** An application programming interface (API) tailored for car rental services streamlines the integration of rental functionalities into various applications or systems. It empowers users to execute essential tasks associated with vehicle rental, including reservation and inventory management.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -42,6 +45,10 @@
     <li><a href="https://rubyonrails.org/">Rails</a></li>
 </details>
 <details>
+<summary>Test</summary>
+    <li><a href="https://rspec.info/">Rspec</a></li>
+</details>
+<details>
   <summary>Database</summary>
     <li><a href="https://www.postgresql.org/">Postgres</a></li>
 </details>
@@ -50,19 +57,31 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Add Authorizations**
+- **User Registraton**
 - **Add Car**
 - **Delete Car**
-- **details of Car**
 - **Show all Cars**
-- **Book Car**
-- **Show all Booking**
+- **Show detail Info of a Car**
 - **Make Reservations**
+- **Cancel Reservation**
+- **Show all Reservation**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- FRONTEND -->
+## 🔗 Link for the Frontend <a name="frontend"></a>
 
+- [Wheels-4-Rent Frontend](https://github.com/Log-benjamin/Wheels-4-Rent-frontend)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- KANBAN -->
+
+## 🔗 Kanban Board <a name="kanban"></a>
+- [Kanban Board](https://github.com/Log-benjamin/Wheels-4-Rent-backend/projects/1)
+- [Initial Kanban Board](https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -78,7 +97,6 @@ In order to run this project you need:
     ruby >= 3.2.0
     rails >= 7.0
     postgres >- 15.3
-    node
 ```
 
 ### Setup
@@ -128,21 +146,21 @@ Install this project with:
 ```bash
   cd Wheels-4-Rent
   bundle install
-  npm install
 ```
 
 it will install the required gemfile for running the project
 
 ### Usage
 
-to use this project:
+create the database, run migration, and seed files:
 
 ```bash
-   npm run build
-   bin/rails server
+   rails db:create
+   rails db:migrate
+   rails db:seed
 ```
 
-it will run the the server on ```localhost:3000```
+## Makesure the backend is running on ```localhost:3000```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -205,8 +223,8 @@ it will run the the server on ```localhost:3000```
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Impliment proper styling**
-
+- **Add additional Models for more functionality**
+- **Deploy the app so it can be accessible to anyone.**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -225,7 +243,7 @@ Feel free to check the [issues page](https://github.com/Log-benjamin/Wheels-4-Re
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you find this project valuable, please consider sharing it with your acquaintances or network. Your support in sharing this project would be greatly appreciated.
+If you find Wheels-4Rent valuable, please consider sharing it with your acquaintances or network. Your support in sharing this project would be greatly appreciated.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -233,8 +251,10 @@ If you find this project valuable, please consider sharing it with your acquaint
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse for this project
+This project's design is inspired by the work of [Murat Korkmaz](https://www.behance.net/muratk) on [Behance](https://www.behance.net/).Therefore, we express our gratitude to [Murat Korkmaz](https://www.behance.net/muratk) for the inspiring design that contributes to the visual appeal of Wheels-4-Rent.
 
+We also would like to thank Micorverse Support team, Reviwers and Community for this learning oppprtunity.
+ 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
