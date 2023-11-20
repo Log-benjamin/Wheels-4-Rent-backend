@@ -1,4 +1,5 @@
 class Api::V1::RegistrationController < ApplicationController
+  # POST /api/v1/registration
   def create
     user = User.new(params.permit(:name, :email, :password))
     if user.save
@@ -7,7 +8,7 @@ class Api::V1::RegistrationController < ApplicationController
         user:
       }
     else
-      :bad_request
+      render json: user.errors, status: :unprocessable_entity
     end
   end
 end
