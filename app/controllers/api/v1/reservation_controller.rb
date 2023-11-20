@@ -15,6 +15,7 @@ class Api::V1::ReservationController < ApplicationController
         car: reservation.car.name,
         model: reservation.car.model,
         price: reservation.car.price_per_day,
+        total_price: reservation.car.price_per_day * reservation.days,
         image: reservation.car.image
       }
     end
