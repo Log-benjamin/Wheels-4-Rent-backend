@@ -1,0 +1,62 @@
+---
+openapi: 3.0.1
+info:
+  title: API V1
+  version: v1
+paths:
+  "/api/v1/registration":
+    post:
+      summary: Creates A New User
+      tags:
+      - Registration
+      parameters: []
+      responses:
+        '200':
+          description: user created
+        '422':
+          description: Unprocessable Content
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - name
+              - email
+              - password
+  "/api/v1/token":
+    post:
+      summary: Loges the Registred user to the main page
+      tags:
+      - Session
+      parameters: []
+      responses:
+        '200':
+          description: Ok
+        '404':
+          description: Not Found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                password:
+                  type: string
+              required:
+              - name
+              - password
+servers:
+- url: http://localhost:3000/
+  variables:
+    defaultHost:
+      default: http://localhost:3000/
