@@ -71,18 +71,20 @@ if Car.all.count == 0
     price_per_day: 2200, seating_capacity: 2 })
 
     car13 = Car.create({ name: "Ford", model: "Mustang GT convertible old school", description: "The true muscle car of the range looks the part with 19inch multi-spoke black alloy wheels, 5.0 and GT badges, and a unique front grille. As well as all the standard equipment on the 2.3 Ecoboost, the GT is fitted with various performance upgrades including Launch Control (manual only), Brembo performance brakes, and Electronic Line Lock which enables safe and controlled burnouts.
-        Some of the specs include ENGINE TYPE - V8 - 5 L Petrol 450 bhp, TRANSMISSION - 6-speed manual, FUEL TANK CAPACITY (LITRES) - 61L",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ford_Mustang_convertible_5312550.jpg/1200px-Ford_Mustang_convertible_5312550.jpg",
-        price_per_day: 600, seating_capacity: 5 })
-        car14 = Car.create({ name: "McLaren", model: "750S Coupe", description: "With a line-up comprosed solely of supercars, McLaren distills its lessons learned in motorsport into each one of its production vehicles. From grand tourers to dedicated track cars, each McLaren embidies the brad's pursuit of technical excellence.
-        The 750S takes the McLaren ethos to a new apex. True to its DNA, its the next-level supercar. Surpassing the benchmarks for performance, engagement and purity of response.
-        Some of the specs include ENGINE TYPE - 4.0 L twin-turbo V8, TRANSMISSION - 7-Speed with Short Final Drive + Reverse Seamless Shift, FUEL TANK CAPACITY (LITRES) - 72L",
-        image: "https://www.topgear.com/sites/default/files/news-listicle/image/13112019_mclaren_elva_image-02.jpg?w=1290&h=726",
-        price_per_day: 2300, seating_capacity: 2 })
-        car15 = Car.create({ name: "Rolls-Royce", model: "SPECTER", description: "PURE EXPRESSION - Spectre is the worlds first Ultra-Luxury Electric Super Coupé and it heralds the beginning of an all-electric era for Rolls-Royce. A landmark moment not just for the marque but also for electrification,
-        it perfectly demonstrates the direction towards the future. Rolls-Royces commitment to the exceptional. Its unparalleled mastery and engineering ingenuity underscore every distinct feature and continue to command admiration and awe unlike any other. Designed with a vision that never fades even with the passage of time,
-        each pre-owned Rolls-Royce comes with a unique story and infinite possibilities waiting to be unravelled. Where will yours take you?
-        Some of the specs include ENGINE - liquid-cooled V-12 piston aero engine of 27-litres, TRANSMISSION - HydraMatic Automatic, CHARGE CAPACITY - 102.0-kWh battery - with Range betweeen 335-640 km",
-        image: "https://hips.hearstapps.com/hmg-prod/images/2024-rolls-royce-spectre-134-649ee8828e3d7.jpg?crop=0.867xw:0.434xh;0.0612xw,0.313xh&resize=980:*",
-        price_per_day: 3000, seating_capacity: 4 })
+    Some of the specs include ENGINE TYPE - V8 - 5 L Petrol 450 bhp, TRANSMISSION - 6-speed manual, FUEL TANK CAPACITY (LITRES) - 61L",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Ford_Mustang_convertible_5312550.jpg/1200px-Ford_Mustang_convertible_5312550.jpg",
+    price_per_day: 600, seating_capacity: 5 })
+    
+    car14 = Car.create({ name: "McLaren", model: "750S Coupe", description: "With a line-up comprosed solely of supercars, McLaren distills its lessons learned in motorsport into each one of its production vehicles. From grand tourers to dedicated track cars, each McLaren embidies the brad's pursuit of technical excellence.
+    The 750S takes the McLaren ethos to a new apex. True to its DNA, its the next-level supercar. Surpassing the benchmarks for performance, engagement and purity of response.
+    Some of the specs include ENGINE TYPE - 4.0 L twin-turbo V8, TRANSMISSION - 7-Speed with Short Final Drive + Reverse Seamless Shift, FUEL TANK CAPACITY (LITRES) - 72L",
+    image: "https://www.topgear.com/sites/default/files/news-listicle/image/13112019_mclaren_elva_image-02.jpg?w=1290&h=726",
+    price_per_day: 2300, seating_capacity: 2 })
+    
+    car15 = Car.create({ name: "Rolls-Royce", model: "SPECTER", description: "PURE EXPRESSION - Spectre is the worlds first Ultra-Luxury Electric Super Coupé and it heralds the beginning of an all-electric era for Rolls-Royce. A landmark moment not just for the marque but also for electrification,
+    it perfectly demonstrates the direction towards the future. Rolls-Royces commitment to the exceptional. Its unparalleled mastery and engineering ingenuity underscore every distinct feature and continue to command admiration and awe unlike any other. Designed with a vision that never fades even with the passage of time,
+    each pre-owned Rolls-Royce comes with a unique story and infinite possibilities waiting to be unravelled. Where will yours take you?
+    Some of the specs include ENGINE - liquid-cooled V-12 piston aero engine of 27-litres, TRANSMISSION - HydraMatic Automatic, CHARGE CAPACITY - 102.0-kWh battery - with Range betweeen 335-640 km",
+    image: "https://hips.hearstapps.com/hmg-prod/images/2024-rolls-royce-spectre-134-649ee8828e3d7.jpg?crop=0.867xw:0.434xh;0.0612xw,0.313xh&resize=980:*",
+    price_per_day: 3000, seating_capacity: 4 })
 end

@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<img  src='./app/assets/images/9296454.gif' width="300px">
+<img  src='./app/assets/images/9296454.gif' width="40%">
   <h1><b>Wheels-4-Rent</b></h1>
 
 </div>

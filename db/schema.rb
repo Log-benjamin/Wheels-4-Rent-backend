@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_09_091430) do
     t.string "model"
     t.string "description"
     t.string "image"
-    t.decimal "price_per_day"
+    t.integer "price_per_day"
     t.integer "seating_capacity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
