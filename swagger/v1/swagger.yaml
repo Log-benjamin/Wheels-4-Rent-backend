@@ -1,7 +1,7 @@
 ---
 openapi: 3.0.1
 info:
-  title: API V1
+  title: Wheel-4-Rent API 
   version: v1
 paths:
   "/api/v1/cars":
@@ -11,7 +11,7 @@ paths:
       - Cars
       responses:
         '200':
-          description: oK
+          description: OK
           content:
             application/json:
               schema:
@@ -73,7 +73,7 @@ paths:
               - seating_capacity
   "/api/v1/cars/{id}":
     get:
-      summary: Retrieves Detail Information Of A Specific Car
+      summary: Retrieves Detail Information Specific Car
       tags:
       - Cars
       parameters:
@@ -84,7 +84,7 @@ paths:
           type: integer
       responses:
         '200':
-          description: ok
+          description: OK
           content:
             application/json:
               schema:
@@ -126,7 +126,7 @@ paths:
           type: integer
       responses:
         '200':
-          description: ok
+          description: OK
           content:
             application/json:
               schema:
@@ -263,7 +263,7 @@ paths:
           type: integer
       responses:
         '200':
-          description: ok
+          description: OK
           content:
             application/json:
               schema:
@@ -301,7 +301,7 @@ paths:
       parameters: []
       responses:
         '200':
-          description: Ok
+          description: OK
         '404':
           description: Not Found
       requestBody:
