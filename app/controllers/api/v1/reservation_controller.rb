@@ -1,7 +1,7 @@
 class Api::V1::ReservationController < ApplicationController
   before_action :set_reservation, only: %i[destroy]
 
-  # GET /reservations
+  # GET /reservation
   def index
     @reservations = Reservation.all.includes(:car, :user)
     data = @reservations.map do |reservation|
@@ -15,6 +15,7 @@ class Api::V1::ReservationController < ApplicationController
         car: reservation.car.name,
         model: reservation.car.model,
         price: reservation.car.price_per_day,
+        total_price: reservation.car.price_per_day * reservation.days,
         image: reservation.car.image
       }
     end
@@ -22,7 +23,7 @@ class Api::V1::ReservationController < ApplicationController
     render json: data
   end
 
-  # POST /reservations
+  # POST /reservation
   def create
     @reservation = Reservation.new(reservation_params)
 
@@ -47,6 +48,6 @@ class Api::V1::ReservationController < ApplicationController
   end
 
   def reservation_params
-    params.require(:reservation).permit(:start_date, :end_date, :city, :car_id, :user_id)
+    params.require(:reservation).permit(:start_date, :end_date, :city, :car_id, :user_id, :days)
   end
 end

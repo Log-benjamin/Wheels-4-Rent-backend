@@ -1,4 +1,5 @@
 class Api::V1::TokenController < ApplicationController
+  # POST /api/v1/token
   def create
     user = User.find_by(name: params[:name])
     if user&.authenticate(params[:password])

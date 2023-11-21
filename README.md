@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<img  src='./app/assets/images/9296454.gif' width="300px">
+<img  src='./app/assets/images/9296454.gif' width="40%">
   <h1><b>Wheels-4-Rent</b></h1>
 
 </div>
@@ -17,6 +17,7 @@
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
   - [🔗 Link for the Frontend](#frontend)
+  - [🔗 API Documentations](#APIDoc)
   - [🔗 Kanban Board](#kanban)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -74,6 +75,13 @@
 - [Wheels-4-Rent Frontend](https://github.com/Log-benjamin/Wheels-4-Rent-frontend)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- APIDoc -->
+
+## 🔗 Link for the API Documentations <a name="APIDoc"></a>
+
+- open the server in localhost:3000 first
+- [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/)
 
 <!-- KANBAN -->
 
@@ -254,7 +262,7 @@ If you find Wheels-4Rent valuable, please consider sharing it with your acquaint
 This project's design is inspired by the work of [Murat Korkmaz](https://www.behance.net/muratk) on [Behance](https://www.behance.net/).Therefore, we express our gratitude to [Murat Korkmaz](https://www.behance.net/muratk) for the inspiring design that contributes to the visual appeal of Wheels-4-Rent.
 
 We also would like to thank Micorverse Support team, Reviwers and Community for this learning oppprtunity.
- 
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->

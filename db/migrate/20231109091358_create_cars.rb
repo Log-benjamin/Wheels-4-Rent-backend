@@ -5,9 +5,10 @@ class CreateCars < ActiveRecord::Migration[7.1]
       t.string :model
       t.string :description
       t.string :image
-      t.decimal :price_per_day
+      t.integer :price_per_day
+      t.integer :seating_capacity
 
-      t.timestamps  
+      t.timestamps
     end
   end
 end
