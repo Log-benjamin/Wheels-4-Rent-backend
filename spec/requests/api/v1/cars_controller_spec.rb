@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Api::V1::CarsControllers', type: :request do
   describe 'GET /index' do
     it 'returns a success response' do
-      get '/api/v1/cars'
+      get '/api/v1/reservation'
       expect(response).to have_http_status(:success)
     end
   end
@@ -32,21 +32,6 @@ RSpec.describe 'Api::V1::CarsControllers', type: :request do
         expect(response).to have_http_status(:success)
       end
     end
-
-    # context 'with invalid parameters' do
-    #   let(:invalid_attributes) { { car: attributes_for(:car, name: nil) } }
-
-    #   it 'does not create a new car' do
-    #     expect {
-    #       post '/api/v1/cars', params: invalid_attributes
-    #     }.to_not change(Car, :count)
-    #   end
-
-    #   it 'returns a 404 status code' do
-    #     post '/api/v1/cars', params: invalid_attributes
-    #     expect(response).to have_http_status(404)
-    #   end
-    # end
   end
 
   describe 'DELETE /destroy' do

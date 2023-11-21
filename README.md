@@ -170,6 +170,13 @@ create the database, run migration, and seed files:
 
 ## Makesure the backend is running on ```localhost:3000```
 
+### Test
+
+to run the test 
+
+```
+    rspec .\spec\
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
