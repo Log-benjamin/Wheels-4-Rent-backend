@@ -10,7 +10,6 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
 end
 
-
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
