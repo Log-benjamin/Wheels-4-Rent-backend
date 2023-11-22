@@ -318,7 +318,7 @@ paths:
               - name
               - password
 servers:
-- url: {defaultHost}
+- url: https://wheels-4-rent.onrender.com/
   variables:
     defaultHost:
       default: https://wheels-4-rent.onrender.com/
