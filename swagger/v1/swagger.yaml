@@ -158,7 +158,7 @@ paths:
           description: Not Found
   "/api/v1/registration":
     post:
-      summary: Creates A New User
+      summary: Creates New User
       tags:
       - Registration
       parameters: []
@@ -318,7 +318,7 @@ paths:
               - name
               - password
 servers:
-- url: https://wheels-4-rent.onrender.com/
+- url: {defaultHost}
   variables:
     defaultHost:
       default: https://wheels-4-rent.onrender.com/
