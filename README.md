@@ -16,6 +16,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo](#live-demo)
   - [🔗 Link for the Frontend](#frontend)
   - [🔗 API Documentations](#APIDoc)
   - [🔗 Kanban Board](#kanban)
@@ -69,6 +70,9 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo
 <!-- FRONTEND -->
 ## 🔗 Link for the Frontend <a name="frontend"></a>
 
@@ -156,9 +160,11 @@ Install this project with:
   bundle install
 ```
 
+
 it will install the required gemfile for running the project
 
 ### Usage
+
 
 create the database, run migration, and seed files:
 
@@ -167,12 +173,21 @@ create the database, run migration, and seed files:
    rails db:migrate
    rails db:seed
 ```
+### If you want to add and remove a car you should log in as an admin user.
+
+```bash
+ADMIN Credentials
+
+username: admin
+password: 123456789
+```
 
 ## Makesure the backend is running on ```localhost:3000```
 
+
 ### Test
 
-to run the test 
+to run the test
 
 ```
     rspec .\spec\
