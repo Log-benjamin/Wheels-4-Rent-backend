@@ -55,7 +55,7 @@
     <li><a href="https://www.postgresql.org/">Postgres</a></li>
 </details>
 
-<!-- Features -->
+<!-- FEATURES -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -67,8 +67,6 @@
 - **Make Reservations**
 - **Cancel Reservation**
 - **Show all Reservation**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
