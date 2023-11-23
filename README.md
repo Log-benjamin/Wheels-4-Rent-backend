@@ -16,6 +16,7 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo](#live-demo)
   - [🔗 Link for the Frontend](#frontend)
   - [🔗 API Documentations](#APIDoc)
   - [🔗 Kanban Board](#kanban)
@@ -54,7 +55,7 @@
     <li><a href="https://www.postgresql.org/">Postgres</a></li>
 </details>
 
-<!-- Features -->
+<!-- FEATURES -->
 
 ### Key Features <a name="key-features"></a>
 
@@ -69,6 +70,10 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo
+
+- [Wheels-4-Rent](https://wheels-4-rentv1.onrender.com)
+
 <!-- FRONTEND -->
 ## 🔗 Link for the Frontend <a name="frontend"></a>
 
@@ -80,14 +85,19 @@
 
 ## 🔗 Link for the API Documentations <a name="APIDoc"></a>
 
-- open the server in localhost:3000 first
-- [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/)
+- [Wheels-4-Rent API-DOC](https://wheels-4-rent.onrender.com/api-docs/)
 
 <!-- KANBAN -->
 
 ## 🔗 Kanban Board <a name="kanban"></a>
 - [Kanban Board](https://github.com/Log-benjamin/Wheels-4-Rent-backend/projects/1)
-- [Initial Kanban Board](https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png)
+
+<img src="https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png" width="80%" />
+
+### Team Members
+1 [Emmanuel kipngeno](https://github.com/kkmanuu)
+
+2 [Binyam Tegene](https://github.com/Log-benjamin)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,10 +166,12 @@ Install this project with:
   bundle install
 ```
 
+
 it will install the required gemfile for running the project
 
 ### Usage
 
+If you want to use this in your local machine
 create the database, run migration, and seed files:
 
 ```bash
@@ -167,12 +179,25 @@ create the database, run migration, and seed files:
    rails db:migrate
    rails db:seed
 ```
+### If you want to add and remove a car you should log in as an admin user.
 
-## Makesure the backend is running on ```localhost:3000```
+```bash
+ADMIN Credentials
+
+username: admin
+password: 123456789
+```
+
+### Openining server
+Before opening the server go to file /config/puma.rb  and comment line 33
+
+```
+    rails s
+```
 
 ### Test
 
-to run the test 
+to run the test
 
 ```
     rspec .\spec\

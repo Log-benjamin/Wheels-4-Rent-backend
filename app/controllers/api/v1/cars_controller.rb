@@ -1,17 +1,18 @@
 class Api::V1::CarsController < ApplicationController
   before_action :set_car, only: %i[show destroy]
-  # GET /cars
+
+  # GET /api/v1/cars
   def index
     @cars = Car.all
     render json: @cars
   end
 
-  # GET /cars/1
+  # GET /api/v1/cars/1
   def show
     render json: @car
   end
 
-  # POST /cars
+  # POST /api/v1/cars
   def create
     @car = Car.new(car_params)
 
@@ -22,7 +23,7 @@ class Api::V1::CarsController < ApplicationController
     end
   end
 
-  # Delete /cars/1
+  # Delete /api/v1/cars/1
   def destroy
     if @car.destroy
       render json: { id: @car.id }

@@ -17,6 +17,7 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: wheels_4_rent_backend_production
   username: wheels_4_rent_backend
   password: <%= ENV["WHEELS_4_RENT_BACKEND_DATABASE_PASSWORD"] %>
