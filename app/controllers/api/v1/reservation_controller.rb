@@ -1,7 +1,7 @@
 class Api::V1::ReservationController < ApplicationController
   before_action :set_reservation, only: %i[destroy]
 
-  # GET /reservation
+  # GET /api/v1/reservation
   def index
     @reservations = Reservation.all.includes(:car, :user)
     data = @reservations.map do |reservation|
@@ -23,7 +23,7 @@ class Api::V1::ReservationController < ApplicationController
     render json: data
   end
 
-  # POST /reservation
+  # POST /api/v1/reservation
   def create
     @reservation = Reservation.new(reservation_params)
 
@@ -34,7 +34,7 @@ class Api::V1::ReservationController < ApplicationController
     end
   end
 
-  # DELETE /reservation/1
+  # DELETE /api/v1/reservation/1
   def destroy
     if @reservation.destroy
       render json: { id: @reservation.id }
