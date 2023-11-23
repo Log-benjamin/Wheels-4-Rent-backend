@@ -94,6 +94,11 @@
 
 <img src="https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png" width="80%" />
 
+### Team Members
+1 [Emmanuel kipngeno](https://github.com/kkmanuu)
+
+2 [Binyam Tegene](https://github.com/Log-benjamin)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
