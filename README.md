@@ -171,7 +171,7 @@ it will install the required gemfile for running the project
 
 ### Usage
 
-
+If you want to use this in your local machine
 create the database, run migration, and seed files:
 
 ```bash
@@ -188,8 +188,12 @@ username: admin
 password: 123456789
 ```
 
-## Makesure the backend is running on ```localhost:3000```
+### Openining server
+Before opening the server go to file /config/puma.rb  and comment line 33
 
+```
+    rails s
+```
 
 ### Test
 
