@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: Passw0rd=
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: wheels_4_rent_backend_development
+  username: postgres
+  password: Passw0rd=
+
+test:
+  <<: *default
+  database: wheels_4_rent_backend_development
+
+production:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
+  database: wheels_4_rent_backend_production
+  username: wheels_4_rent_backend
+  password: <%= ENV["WHEELS_4_RENT_BACKEND_DATABASE_PASSWORD"] %>

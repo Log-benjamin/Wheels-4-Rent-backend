@@ -1,0 +1,324 @@
+---
+openapi: 3.0.1
+info:
+  title: Wheel-4-Rent API 
+  version: v1
+paths:
+  "/api/v1/cars":
+    get:
+      summary: Renders All The Cars Available In The DB
+      tags:
+      - Cars
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                  model:
+                    type: string
+                  description:
+                    type: string
+                  image:
+                    type: string
+                  price_per_day:
+                    type: integer
+                  seating_capacity:
+                    type: integer
+                required:
+                - name
+                - model
+                - description
+                - image
+                - price_per_day
+                - seating_capacity
+    post:
+      summary: Add Car To DB
+      tags:
+      - Cars
+      parameters: []
+      responses:
+        '200':
+          description: car added
+        '422':
+          description: Unprocessable Content
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                model:
+                  type: string
+                description:
+                  type: string
+                image:
+                  type: string
+                price_per_day:
+                  type: integer
+                seating_capacity:
+                  type: integer
+              required:
+              - name
+              - model
+              - description
+              - image
+              - price_per_day
+              - seating_capacity
+  "/api/v1/cars/{id}":
+    get:
+      summary: Retrieves Detail Information Specific Car
+      tags:
+      - Cars
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  model:
+                    type: string
+                  description:
+                    type: string
+                  image:
+                    type: string
+                  price_per_day:
+                    type: integer
+                  seating_capacity:
+                    type: integer
+                required:
+                - id
+                - name
+                - model
+                - description
+                - image
+                - price_per_day
+                - seating_capacity
+        '404':
+          description: Not Found
+    delete:
+      summary: Remove Car From DB
+      tags:
+      - Cars
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  model:
+                    type: string
+                  description:
+                    type: string
+                  image:
+                    type: string
+                  price_per_day:
+                    type: integer
+                  seating_capacity:
+                    type: integer
+                required:
+                - id
+                - name
+                - model
+                - description
+                - image
+                - price_per_day
+                - seating_capacity
+        '404':
+          description: Not Found
+  "/api/v1/registration":
+    post:
+      summary: Creates New User
+      tags:
+      - Registration
+      parameters: []
+      responses:
+        '200':
+          description: user created
+        '422':
+          description: Unprocessable Content
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                password:
+                  type: string
+              required:
+              - name
+              - email
+              - password
+  "/api/v1/reservation":
+    get:
+      summary: Renders All The Reservation Available In The DB
+      tags:
+      - Reservation
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  start_date:
+                    type: date
+                  end_date:
+                    type: date
+                  city:
+                    type: string
+                  days:
+                    type: integer
+                  user_id:
+                    type: bigint
+                  car_id:
+                    type: bigint
+                required:
+                - start_date
+                - end_date
+                - city
+                - days
+                - user_id
+                - car_id
+    post:
+      summary: Create New Reservation
+      tags:
+      - Reservation
+      parameters: []
+      responses:
+        '201':
+          description: Reservation Confirmed
+        '422':
+          description: Unprocessable Content
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                start_date:
+                  type: date
+                end_date:
+                  type: date
+                city:
+                  type: string
+                days:
+                  type: integer
+                user_id:
+                  type: bigint
+                car_id:
+                  type: bigint
+              required:
+              - start_date
+              - end_date
+              - city
+              - days
+              - user_id
+              - car_id
+  "/api/v1/reservation/{id}":
+    delete:
+      summary: Cancel Reservation
+      tags:
+      - Reservation
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  id:
+                    type: integer
+                  start_date:
+                    type: date
+                  end_date:
+                    type: date
+                  city:
+                    type: string
+                  days:
+                    type: integer
+                  user_id:
+                    type: bigint
+                  car_id:
+                    type: bigint
+                required:
+                - id
+                - start_date
+                - end_date
+                - city
+                - days
+                - user_id
+                - car_id
+        '404':
+          description: Not Found
+  "/api/v1/token":
+    post:
+      summary: Loges the Registred user to the main page
+      tags:
+      - Session
+      parameters: []
+      responses:
+        '200':
+          description: OK
+        '404':
+          description: Not Found
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                password:
+                  type: string
+              required:
+              - name
+              - password
+servers:
+- url: https://wheels-4-rent.onrender.com/
+  variables:
+    defaultHost:
+      default: https://wheels-4-rent.onrender.com/
