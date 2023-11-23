@@ -91,7 +91,8 @@
 
 ## 🔗 Kanban Board <a name="kanban"></a>
 - [Kanban Board](https://github.com/Log-benjamin/Wheels-4-Rent-backend/projects/1)
-- [Initial Kanban Board](https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png)
+
+<img src="https://user-images.githubusercontent.com/97245616/281423098-fc50c624-f431-4dc6-8c29-a20a40f49d19.png" width="80%" />
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
