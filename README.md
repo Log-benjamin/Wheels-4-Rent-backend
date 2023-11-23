@@ -85,8 +85,7 @@
 
 ## 🔗 Link for the API Documentations <a name="APIDoc"></a>
 
-- open the server in localhost:3000 first
-- [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/)
+- [Wheels-4-Rent API-DOC](https://wheels-4-rent.onrender.com/api-docs/)
 
 <!-- KANBAN -->
 
